@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="SignUp.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1 style="text-align: center;">Sign Up</h1>
+             
+
+            <div class="inputbox">
+                <input type="text" placeholder="Emri" id="emer">
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="inputbox">
+                <input type="text" placeholder="Mbiemri" id="mbi">
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="inputbox">
+                <input type="email" placeholder="Email" id="imell">
+                <i class='bx bx-envelope'></i>
+            </div>
+
+            <div class="inputbox">
+                <input type="text" placeholder="Username" id="name">
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="inputbox">
+                <input type="password" placeholder="Password" id="pass">
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="inputbox">
+                <input type="password" placeholder="Confirm password" id="cpass">
+            </div>
+
+            <div class="remember">
+                <label><input type="checkbox">  Remember Me</label>
+            </div>
+
+            <button type="submit" class="b1" onclick="validateForm(event)">Sign Up</button>
+        </form>
+    </div>
+
+    <script>
+    function validateForm(event) {
+        event.preventDefault();
+        
+        const emri = document.getElementById('emer').value;
+        const mbiemri = document.getElementById('mbi').value;
+        const email = document.getElementById('imell').value;
+        const username = document.getElementById('name').value;
+        const password = document.getElementById('pass').value;
+        const confirm = document.getElementById('cpass').value;
+
+        var nameRegex = /^[A-Z][a-z]*$/;
+        var emailRegex = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
+        var usernameRegex = /^[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*$/;
+        
+        if(emri === "") {
+            alert("Ju lutem plotesoni Emrin!");
+            return false;
+        }
+        if(!nameRegex.test(emri)){
+            alert("Ju lutem shkruani emer valid");
+            return false;
+        }
+
+        if(mbiemri === "") {
+            alert("Ju lutem plotesoni Mbiemrin!");
+            return false;
+        }
+        if(!nameRegex.test(mbiemri)){
+            alert("Ju lutem shkruani mbiemer valid");
+            return false;
+        }
+        if(email === "") {
+            alert("Ju lutem plotesoni Email!");
+            return false;
+        }
+        if(!emailRegex.test(email)){
+            alert("Ju lutem shtoni nje email valide");
+            return false;
+        }
+
+        if(username === ""){
+            alert("Ju lutem plotesoni Username!");
+            return false;
+        }
+        if(!usernameRegex.test(username)){
+            alert("Ju lutem shtoni nje username valid");
+            return false;
+        }
+
+        if (password === "") {
+            alert("Ju lutem plotesoni Password!");
+            return false;
+        }
+        if(password.length<8){
+            alert("Password duhet te jete te pakten 8 karaktere");
+            return false;
+        }
+        if (confirm === "") {
+            alert("Ju lutem konfirmoni Password!");
+            return false;
+        }
+        if(password !== confirm){
+            alert("Password doesn't match!");
+            return false;
+        }
+        else{
+            window.location.assign("LogIn.html");
+        }
+    }
+    </script>
+</body>
+</html>

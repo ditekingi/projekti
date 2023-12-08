@@ -86,6 +86,7 @@ li>a{
     background: url("books.jpg") no-repeat;
     background-size: cover; 
     height: 60vh;
+    width: 99%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -104,7 +105,6 @@ li>a{
 }
 .photos{
     display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: flex-start;
@@ -162,17 +162,14 @@ li>a{
     padding-left: 40px;
     padding-right: 40px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: baseline;
-    align-content: stretch;
     margin-bottom: 35px;
 }
 .f{
     background-color: rgb(65, 34, 52);
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
     align-content: flex-start;
