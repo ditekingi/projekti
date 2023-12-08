@@ -158,3 +158,51 @@ li>a{
     font-weight: 600;
     margin-bottom: 20px;
 }
+.pages{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: stretch;
+    margin-bottom: 35px;
+}
+.f{
+    background-color: rgb(65, 34, 52);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 15px;
+    color: whitesmoke;
+    box-shadow: 2px 2px 8px #111;
+}
+.footerleft{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+    color: whitesmoke;
+    padding-left: 40px;
+}
+.footerright{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+    padding-right: 40px;
+}
+.footerright>a{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
