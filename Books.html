@@ -37,6 +37,40 @@
                 <div class="genres"><a class="link" href="#m">Muzike</a></div>
                 <div class="genres"><a class="link" href="#c">Comics</a></div>
         </div>
+
+        <div class="slider">
+            <h2 style="color: rgb(65, 34, 52);">Popular</h2>
+            <img id="slideshow">
+            <button class="arrow prev" onclick="prevSlide()">❮</button>
+            <button class="arrow next" onclick="nextSlide()">❯</button>
+        </div>
     </main>
+
+    <script>
+        let i = 0;
+        let images = ['book23.jpg','book24.jpg','book25.jpg','book26.jpg','book27.jpg','book28.jpg','book29.jpg','book30.jpg','book31.jpg','book32.jpg','book33.jpg','book34.jpg','book35.jpg','book36.jpg'];
+
+        function nextSlide(){
+            document.getElementById('slideshow').src = images[i];
+
+            if(i < images.length - 1){
+                i++;
+            }
+            else{
+                i = 0;
+            }
+        }
+        function prevSlide(){
+            document.getElementById('slideshow').src = images[i];
+
+            if(i == 0){
+                i = images.length - 1;
+            }
+            else{
+                i--;
+            }
+        }
+        document.addEventListener(onload, nextSlide());
+    </script>
 </body>
 </html>
