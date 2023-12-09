@@ -63,14 +63,14 @@
 
         var nameRegex = /^[A-Z][a-z]*$/;
         var emailRegex = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
-        var usernameRegex = /^[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*$/;
+        var usernameRegex = /[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*$/;
         
         if(emri === "") {
             alert("Ju lutem plotesoni Emrin!");
             return false;
         }
         if(!nameRegex.test(emri)){
-            alert("Ju lutem shkruani emer valid");
+            alert("Ju lutem shkruani emer valid (Emri duhet te filloje me shkronje te madhe)!");
             return false;
         }
 
@@ -79,7 +79,7 @@
             return false;
         }
         if(!nameRegex.test(mbiemri)){
-            alert("Ju lutem shkruani mbiemer valid");
+            alert("Ju lutem shkruani mbiemer valid (Mbiemri duhet te filloje me shkronje te madhe)!");
             return false;
         }
         if(email === "") {
@@ -113,7 +113,7 @@
             return false;
         }
         if(password !== confirm){
-            alert("Password doesn't match!");
+            alert("Passwords do not match!");
             return false;
         }
         else{
