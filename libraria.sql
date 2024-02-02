@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 02, 2024 at 12:20 PM
+-- Generation Time: Feb 02, 2024 at 04:40 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -60,6 +60,21 @@ INSERT INTO `home` (`Libri`, `Cmimi`, `Autori`, `ImagePath`, `AddedBy`) VALUES
 ('The Kite Runner', '12.15', 'Khaled Hosseini', 'book7.jpg', ''),
 ('The Siege', '12.30', 'Ismail Kadare', 'book84.jpg', ''),
 ('Things Fall Apart', '13.09', 'Chinua Achebe', 'book6.jpg', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `libribooks`
+--
+
+CREATE TABLE `libribooks` (
+  `Libri` varchar(100) NOT NULL,
+  `Cmimi` varchar(30) NOT NULL,
+  `Autori` varchar(100) NOT NULL,
+  `ImagePath` varchar(100) NOT NULL,
+  `Category` varchar(100) NOT NULL,
+  `AddedBy` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
