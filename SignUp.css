@@ -82,3 +82,16 @@ body{
 .b1:active{
     transform: scale(0.98);
 }
+.wrapper .login{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.login p a{
+    color: rgb(211, 178, 95);
+    text-decoration: none;
+    font-weight: 600;
+}
+.login p a:hover{
+    text-decoration: underline;
+}
