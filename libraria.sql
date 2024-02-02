@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 02, 2024 at 04:40 PM
+-- Generation Time: Feb 02, 2024 at 05:07 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,6 +20,37 @@ SET time_zone = "+00:00";
 --
 -- Database: `libraria`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `aboutus`
+--
+
+CREATE TABLE `aboutus` (
+  `Teksti` varchar(500) NOT NULL,
+  `AddedBy` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `aboutus`
+--
+
+INSERT INTO `aboutus` (`Teksti`, `AddedBy`) VALUES
+('“Parajsën e kam imagjinuar gjithnjë si një lloj librarie”', 'arbam'),
+('Këto janë fjalët e një shkrimtari të njohur argjentinas, Jorge Luis Borgesit.', 'arbam'),
+('Ashtu siç përfytyrohet parajsa - e bukur, e qetë, plot paqe - ashtu është edhe brendia e një librarie - qetësi shpirtërore, shumë dije dhe palestër për trurin.', 'arbam'),
+('Nuk ka mundësi të mos kujtosh thëniet të mendjeve të ndritura dedikuar librit, sapo shkel në librarinë “Bibliopolium”, në zemër të Prishtinës. Lexuesit që e frekuentojnë i kanë vënë emrin “Institucioni i Librit”. Por, asgjë nuk është arritur brenda ditës apo pak ditësh, pak muajsh apo pak vjetësh.', 'arbam'),
+('Libraria \"Bibliopolium\" filloi punën më 4 Maj të vitit 2000. Ishte periudhë paslufte, vendi kishte shumë humbje e mungesa, ndërsa mes të tjerash ndihej më shumë se kurrë nevoja për literaturë shkollore/universitare dhe krijimtari letrare si për nxënësit e shkollave, studentët, ashtu edhe për lexuesit e rregullt që leximin e kanë ushqim shpirtëror.', 'arbam'),
+('Kjo nevojë bëri që libraria \"Bibliopolium\" të zhvillohej dita-ditës, t`i merrte shumë seriozisht lexuesit dhe kërkesat e tyre dhe të pasurohej gjithnjë e më shumë me tituj. Sot, kohën e kemi shumë të paktë krahasuar me numrin e titujve që gjenden në raftet e librarisë \"Bibliopolium\". Kjo na kujton edhe një thënie të një tekstshkruesi amerikan të viteve ’70, Frank Zappas, i cili kishte thënë: “Kaq shumë libra, kaq pak kohë”.', 'arbam'),
+('Sot në librarinë \"Bibliopolium\" gjenden mbi 45.000 tituj botimesh nga autorë vendorë dhe të huaj. Botime në gjuhët kryesore të botës; shqip, anglisht, italisht, gjermanisht, spanjisht, frëngjisht dhe gjuhë të tjera. Botime të zhanreve të ndryshme, për të gjitha moshat.', 'arbam'),
+('Botime në shumë gjuhë edhe për vizitorë/lexues të nacionaliteteve të ndryshme që jetojnë dhe punojnë në Kosovë apo që thjesht si turistë qëndrojnë për pak kohë në vendin tonë. Vendndodhja e librarisë \"Bibliopolium\" bën që ata të cilët e vizitojnë Prishtinën për hërë të parë ta kenë para sysh. Sheshi “Nënë Tereza” duke qenë zonë shumë e frekuentuar e nxjerr në pah edhe librarinë si vlerë në mes të kryeqytetit.', 'arbam'),
+('Në një hapësirë prej 500m2, rrethuar me rafte të mbushura me libra, enterier modern, dy galeri plot ngrohtësi, këndet e leximit dhe hapësira të veçanta që shfrytëzohen për ceremoni të promovimeve të ndryshme dhe aktivitete që mund të bëhen në librarinë \"Bibliopolium\".', 'arbam'),
+('Në librarinë \"Bibliopolium\" janë të punësuar persona me integritet njerëzor e profesional, persona që leximin e kanë pasion që nga fëmijëria dhe janë të gatshëm t’u shërbejnë dhe t`u ndihmojnë në përzgjedhje të gjithë klientëve pa dallim moshe, gjinie dhe përkatësie etnike.', 'arbam'),
+('Kur kam pak para blej libra, kur më mbetet diçka nga ato para, blej ushqim dhe veshje” – Desiderius Erasmus, filozof holandez.', 'arbam'),
+('Libraria “Bibliopolium” me kalimin e viteve është kthyer në një mekanizëm praktik në të mirë të lexuesve. Sot, kushdo që është në kërkim të një botimi, s’ka pse të humbasë kohë dhe të vihet në lëvizje për ta gjetur botimin. Mjafton t’i drejtohet librarisë \"Bibliopolium\" me porosinë për librin dhe stafi kujdeset që ai botim të përfundojë sa më shpejt në duart e lexuesit/es.', 'arbam'),
+('Libraria \"Bibliopolium\" për të gjithë blerësit kujdeset që titujt e kërkuar të dalin në shitje me çmime sa më të arsyeshme, që të mund të blihen nga të gjithë. Në mënyrë konstante aplikon sistemin e zbritjeve si në raste festash apo edhe për ditë të caktuara, shpeshherë edhe pa ndonjë arsye të posaçme apo datë të shënuar, vetëm për të respektuar dhe gëzuar lexuesit e saj.', 'arbam'),
+('Vizitoje librarinë \"Bibliopolium\" sepse aty jetohet për librat!', 'arbam');
 
 -- --------------------------------------------------------
 

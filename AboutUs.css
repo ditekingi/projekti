@@ -18,7 +18,7 @@ body{
     padding: 10px;
     z-index: 100;
 }
-ul{
+.hederi{
     display: flex;
     list-style-type: none;
     justify-content: space-between;
@@ -38,8 +38,8 @@ ul{
 li{
     display: flex;
     flex-wrap: nowrap;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 li>a{
     text-decoration: none;
@@ -103,16 +103,21 @@ li>a{
 .f2>ul>li{
     margin-bottom: 10px;
 }
+.butoni{
+    border-radius: 2px;
+    border-color: rgb(65, 34, 52);
+    color: rgb(65, 34, 52);
+    font-family: garamond;
+}
 .quote{
     border-radius: 25px;
     margin-top: 20px;
     margin-bottom: 35px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 30px;
     background-image: url(books1.jpg);
     background-size: 100% 100%;
     height: 600px;
-    width: 1500px;
+    width: 95%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -135,7 +140,6 @@ li>a{
 .f{
     background-color: rgb(65, 34, 52);
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
     align-content: flex-start;
@@ -168,4 +172,57 @@ li>a{
     color: white;
     text-decoration: none;
     margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        font-size: 14px; /* Adjust the base font size for smaller screens */
+    }
+    .h1{
+        height: auto;    
+    }
+    .hederi{
+        font-size: 10px;
+    }
+    li{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .dropdown .drop{
+        font-size: 10px;
+    }
+    .b{
+        max-width: 40px;
+        font-size: 10px;
+    }
+    .logo img{
+        max-width: 25vw;
+        height: auto;
+    }
+    .f1 #aboutus{
+        font-size: 20px;
+    }
+    .blej{
+        width: 90%;
+        font-size: 14px;
+    }
+    .f2 .orari{
+        font-size: 14px;
+    }
+    .container{
+        font-size: 15px;
+    }
+    .quote{
+        width: 84vw;
+        height: 40vh;
+    }
+    .quote .tekst{
+        font-size: small;
+    }
+    .f2{
+        width: 50vw;
+    }
 }
