@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 02, 2024 at 05:07 PM
+-- Generation Time: Feb 02, 2024 at 07:44 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -110,6 +110,30 @@ CREATE TABLE `libribooks` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `news`
+--
+
+CREATE TABLE `news` (
+  `Eventi` varchar(100) NOT NULL,
+  `Dita` int(11) NOT NULL,
+  `Muaji` varchar(20) NOT NULL,
+  `Viti` int(11) NOT NULL,
+  `Ora` varchar(30) NOT NULL,
+  `AddedBy` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `news`
+--
+
+INSERT INTO `news` (`Eventi`, `Dita`, `Muaji`, `Viti`, `Ora`, `AddedBy`) VALUES
+('Arba ne Bibliopolium', 23, 'FEB', 2024, '12:00PM', ''),
+('Panairi i librit ne Prishtine', 5, 'FEB', 2024, '11:00AM', ''),
+('Promovimi i librit Bride', 9, 'FEB', 2024, '4:00PM', '');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -140,6 +164,12 @@ INSERT INTO `users` (`Emri`, `Mbiemri`, `Email`, `Username`, `Pass`, `Roli`) VAL
 --
 ALTER TABLE `home`
   ADD PRIMARY KEY (`Libri`);
+
+--
+-- Indexes for table `news`
+--
+ALTER TABLE `news`
+  ADD PRIMARY KEY (`Eventi`);
 
 --
 -- Indexes for table `users`
