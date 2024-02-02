@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 02, 2024 at 05:07 PM
+-- Generation Time: Feb 02, 2024 at 06:47 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -106,6 +106,28 @@ CREATE TABLE `libribooks` (
   `Category` varchar(100) NOT NULL,
   `AddedBy` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `shporta`
+--
+
+CREATE TABLE `shporta` (
+  `Libri` varchar(100) NOT NULL,
+  `Cmimi` varchar(30) NOT NULL,
+  `Autori` varchar(50) NOT NULL,
+  `ImagePath` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `shporta`
+--
+
+INSERT INTO `shporta` (`Libri`, `Cmimi`, `Autori`, `ImagePath`) VALUES
+('Kafka on the Shore', '13.20', 'Haruki Murakami', 'book12.jpg'),
+('No Longer Human', '14.50', 'Osamu Dazai', 'book15.jpg'),
+('The Wedding Planner', '10.50', 'Danielle Steel', 'book62.jpg');
 
 -- --------------------------------------------------------
 
